@@ -1,4 +1,29 @@
 <!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Portfolio, Biografie und Kontakt — Dr. Pia Fruth" />
+<meta name="author" content="Pia Fruth" />
+<title>Dr. Pia Fruth — Journalistin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand">
+<div class="logo" aria-hidden>PF</div>
+<div>
+<div class="site-title">Dr. Pia Fruth</div>
+<div class="site-sub">Journalistin · Dozentin · Medienwissenschaftlerin</div>
+</div>
+</div>
+<nav aria-label="Hauptnavigation">
+<a href="#about">Über</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact" class="primary">Kontakt</a>
+</nav>
+</header>
 
 
 <main>
@@ -68,26 +93,4 @@
 <a href="#datenschutz" style="text-decoration:none;color:var(--muted)">Datenschutzerklärung</a>
 </div>
 </footer>
-</div>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-function handleContact(e){
-e.preventDefault();
-const name=document.getElementById('name').value.trim();
-const email=document.getElementById('email').value.trim();
-const message=document.getElementById('message').value.trim();
-if(!name||!email||!message){
-showResult('Bitte alle Felder ausfüllen.'); return false;
-}
-const body = encodeURIComponent(`Name: ${name}\nE-Mail: ${email}\n\n${message}`);
-const mailto = `mailto:pia.fruth@uni-tuebingen.de?subject=Kontakt%20über%20Webseite&body=${body}`;
-window.location.href = mailto;
-showResult('E-Mail-Client geöffnet.');
-return false;
-}
-function showResult(text){document.getElementById('formResult').textContent=text;}
-</script>
-</body>
 </html>
