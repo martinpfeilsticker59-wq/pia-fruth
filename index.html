@@ -1,111 +1,93 @@
 <!doctype html>
-<html lang="de">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Journalistin — Portfolio, Biografie und Kontakt." />
-<meta name="author" content="Vorname Nachname" />
-<title>Vorname Nachname — Journalistin</title>
 
 
-<!-- Basic styling: clean, responsive and print-friendly -->
-<style>
-:root{
---bg:#ffffff; --text:#0b1220; --muted:#6b7280; --accent:#0ea5a4; --card:#f8fafc;
---radius:12px; --container:1100px;
---max-width:1100px;
---shadow: 0 6px 18px rgba(11,18,32,0.06);
---sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
+<main>
+<section class="hero">
+<article class="hero-card">
+<h1 class="headline">Journalismus, Stimme & Medienforschung</h1>
+<p class="lead">Dr. Pia Fruth ist Hörfunkjournalistin, Dozentin und wissenschaftliche Mitarbeiterin am Institut für Medienwissenschaft der Universität Tübingen. Ihre Arbeit verbindet journalistische Praxis mit Forschung zu Stimme, Klang und Medienkultur.</p>
+<p style="margin-top:16px"><span class="pill">Aktuell: Forschung zu Stimme & Öffentlichkeit</span></p>
+</article>
+<aside>
+<img src="https://www.transcript-verlag.de/out/pictures/generated/product/1/9783837647148_fruth_cover-550x550.jpg" alt="Portrait Dr. Pia Fruth" class="portrait" loading="lazy">
+</aside>
+</section>
 
 
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-margin:0; font-family:var(--sans); color:var(--text); background:var(--bg); -webkit-font-smoothing:antialiased;
-line-height:1.5; -webkit-text-size-adjust:100%; padding:24px;
-}
-
-
-.wrap{max-width:var(--container); margin:0 auto}
-
-
-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
-.brand{display:flex;align-items:center;gap:14px}
-.logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;box-shadow:var(--shadow)}
-.site-title{font-size:18px;font-weight:700}
-.site-sub{font-size:12px;color:var(--muted)}
-
-
-nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
-nav a.primary{color:var(--text)}
-
-
-/* Hero */
-.hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:28px}
-.hero-card{background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:var(--shadow)}
-
-
-.headline{font-size:28px;margin:0 0 8px}
-.lead{color:var(--muted);margin:0}
-
-
-.portrait{width:100%;height:100%;display:block;border-radius:10px;object-fit:cover}
-
-
-/* Sections */
-section{margin-bottom:24px}
-h2{font-size:20px;margin:0 0 12px}
-
-
-/* Portfolio grid */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-.card{background:linear-gradient(180deg,rgba(255,255,255,0.98),var(--card));padding:14px;border-radius:10px;box-shadow:var(--shadow);border:1px solid rgba(11,18,32,0.03)}
-.card h3{margin:0 0 6px;font-size:16px}
-.card p{margin:0;color:var(--muted);font-size:14px}
-
-
-/* Contact */
-.contact-form{display:grid;gap:8px}
-input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;font-family:var(--sans)}
-button{background:var(--accent);border:none;color:white;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer}
-
-
-footer{color:var(--muted);font-size:13px;margin-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-
-
-/* Responsive */
-@media (max-width:900px){
-.hero{grid-template-columns:1fr;}
-nav{display:none}
-}
-
-
-/* Print-friendly */
-@media print{body{padding:0}header,footer{display:none}}
-
-
-/* small utility */
-.muted{color:var(--muted)}
-.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef2f7;font-weight:600;font-size:13px}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header>
-<div class="brand">
-<div class="logo" aria-hidden>VN</div>
-<div>
-<div class="site-title">Vorname Nachname</div>
-<div class="site-sub">Freie Journalistin — Recherche · Reportagen · Podcast</div>
+<section id="about">
+<div class="hero-card">
+<h2>Über mich</h2>
+<p>Ich arbeite seit Ende der 1990er Jahre im Hörfunk, schreibe für Tageszeitungen und Magazine und bin seit 2008 Dozentin im Medienbereich. Meine Spezialgebiete sind wissenschaftliches und journalistisches Schreiben, Medienbildung sowie der Klang und die Wirkung der menschlichen Stimme.</p>
+<p>Ich habe Rhetorik, Spanisch und Französisch in Tübingen studiert und ein Volontariat bei Neckar-Alb-Radio absolviert. Seit 2003 arbeite ich beim SWR. Für mein Feature „Auf nach Indien“ wurde ich 2007 mit dem Medienpreis Mittelstand ausgezeichnet. 2018 promovierte ich mit der Dissertation <em>Record. Play. Stop. – Die Ära der Kompaktkassette</em>.</p>
 </div>
+</section>
+
+
+<section id="portfolio">
+<h2>Ausgewählte Arbeiten</h2>
+<div class="grid">
+<article class="card">
+<h3><a href="https://journalistenpreise.de/?id=preistraeger&no_cache=1&jahr=2008" target="_blank">Feature: Auf nach Indien (SWR, 2007)</a></h3>
+<p class="muted">Hörfunk-Feature · ausgezeichnet mit dem Medienpreis Mittelstand 2007.</p>
+</article>
+<article class="card">
+<h3><a href="https://www.transcript-verlag.de/978-3-8376-4714-8/record.-play.-stop./" target="_blank">Record. Play. Stop. (2018)</a></h3>
+<p class="muted">Dissertation zur Kulturgeschichte der Kompaktkassette, transcript Verlag.</p>
+</article>
+<article class="card">
+<h3><a href="#" target="_blank">Krisen-Radio aus dem Baumhaus (RuG 47, 2021)</a></h3>
+<p class="muted">Akustischer Protest gegen den Bau der Startbahn West.</p>
+</article>
 </div>
-<nav aria-label="Hauptnavigation">
-<a href="#about">Über</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact" class="primary">Kontakt</a>
-</nav>
-</header>
+</section>
 
 
+<section id="contact">
+<div class="hero-card">
+<h2>Kontakt</h2>
+<p class="muted">Für Anfragen oder Interviewwünsche erreichen Sie mich per Formular oder direkt per E-Mail.</p>
+<form class="contact-form" onsubmit="return handleContact(event)">
+<input type="text" id="name" placeholder="Ihr Name" required>
+<input type="email" id="email" placeholder="E-Mail" required>
+<textarea id="message" rows="6" placeholder="Nachricht" required></textarea>
+<div style="display:flex;gap:10px;align-items:center">
+<button type="submit">Nachricht senden</button>
+<a href="mailto:pia.fruth@uni-tuebingen.de" style="margin-left:8px;color:var(--muted);text-decoration:none">Oder per E-Mail</a>
+</div>
+<div id="formResult" role="status" aria-live="polite" style="margin-top:8px;color:var(--muted)"></div>
+</form>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div>© <span id="year"></span> Dr. Pia Fruth</div>
+<div style="display:flex;gap:12px;align-items:center">
+<a href="#impressum" style="text-decoration:none;color:var(--muted)">Impressum</a>
+<a href="#datenschutz" style="text-decoration:none;color:var(--muted)">Datenschutzerklärung</a>
+</div>
+</footer>
+</div>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+function handleContact(e){
+e.preventDefault();
+const name=document.getElementById('name').value.trim();
+const email=document.getElementById('email').value.trim();
+const message=document.getElementById('message').value.trim();
+if(!name||!email||!message){
+showResult('Bitte alle Felder ausfüllen.'); return false;
+}
+const body = encodeURIComponent(`Name: ${name}\nE-Mail: ${email}\n\n${message}`);
+const mailto = `mailto:pia.fruth@uni-tuebingen.de?subject=Kontakt%20über%20Webseite&body=${body}`;
+window.location.href = mailto;
+showResult('E-Mail-Client geöffnet.');
+return false;
+}
+function showResult(text){document.getElementById('formResult').textContent=text;}
+</script>
+</body>
 </html>
