@@ -1,134 +1,51 @@
-/* Grundlayout */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
-  background: #fff;
-  line-height: 1.6;
+/* Palette & Typografie */
+:root{
+--bg: #ffffff;
+--text: #111111;
+--muted: #6b7280;
+--accent: #0077b6;
+--sidebar-w: 220px;
 }
+
+
+html,body{height:100%;}
+body{
+margin:0; background:var(--bg); color:var(--text); font-family:'Lora', serif; -webkit-font-smoothing:antialiased;
+}
+
 
 /* Sidebar */
-.sidebar {
-  position: fixed;
-  top: 0; left: 0; bottom: 0;
-  width: 220px;
-  background: #fff;
-  border-right: 1px solid #eee;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.sidebar{
+position:fixed; left:0; top:0; bottom:0; width:var(--sidebar-w); padding:36px 20px; display:flex; flex-direction:column; align-items:flex-start; gap:24px; border-right:1px solid #eee; background: #fff;
 }
+.logo{width:88px; height:auto; display:block}
+.side-nav{display:flex; flex-direction:column; gap:12px; margin-top:6px}
+.side-nav a{font-family:'Montserrat', sans-serif; font-weight:700; color:var(--text); text-decoration:none; font-size:0.95rem}
+.side-nav a:hover{color:var(--accent)}
+.side-foot{margin-top:auto; font-size:0.85rem; color:var(--muted)}
 
-.sidebar .logo {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
 
-.sidebar nav a {
-  display: block;
-  margin: 0.5rem 0;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
+/* Main content */
+.content{margin-left:calc(var(--sidebar-w) + 20px); padding:48px; max-width:1100px}
 
-.sidebar nav a:hover {
-  color: #0077b6;
-}
 
-/* Content Bereich */
-.content {
-  margin-left: 240px;
-  padding: 2rem;
-  max-width: 1000px;
-}
+/* Hero */
+.hero{display:grid; grid-template-columns:1fr 360px; gap:32px; align-items:center; margin-bottom:48px}
+.hero h1{font-family:'Montserrat', sans-serif; font-size:36px; margin:0 0 12px}
+.lead{font-size:1.1rem; color:var(--muted); margin:0 0 12px}
+.pill{display:inline-block; padding:8px 12px; background:#f3f7fb; border-radius:999px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.85rem}
+.hero-figure{margin:0}
+.hero-img{width:100%; height:auto; border-radius:8px; display:block}
+.muted{color:var(--muted)}
 
-/* Hero Section */
-.hero {
-  margin-bottom: 3rem;
-}
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
+/* Sections */
+.section{margin-bottom:40px}
+h2{font-family:'Montserrat', sans-serif; font-size:24px; margin:0 0 18px}
+.card{background:#fff; padding:18px; border-radius:10px; box-shadow:0 8px 20px rgba(16,24,40,0.04)}
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
 
-.hero-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Sektionen */
-section {
-  margin-bottom: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Grid Portfolio */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.grid article img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-}
-
-.grid article h3 {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.grid article p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Aktuell Liste */
-#aktuell ul {
-  list-style: disc inside;
-  padding-left: 1rem;
-}
-
-#aktuell li {
-  margin: 0.5rem 0;
-}
-
-/* Footer */
-footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
-  border-top: 1px solid #eee;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .sidebar {
-    position: relative;
-    width: 100%;
-    border-right: none;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .content {
-    margin-left: 0;
-  }
+/* Portfolio grid */
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:24px}
+.work img{width:100%; border-radius:8px; display:block;}
 }
