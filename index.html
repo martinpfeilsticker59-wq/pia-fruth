@@ -1,77 +1,111 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pia Fruth – Journalistin & Medienforscherin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pia Fruth – Journalistin & Medienforscherin</title>
 
-
-<!-- Google Fonts: Montserrat for headings/logo, Lora for body -->
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" aria-label="Seitennavigation">
+    <img src="logo.svg" alt="Logo PF" class="logo">
 
-<!-- Sidebar Navigation -->
-<aside class="sidebar" aria-label="Seitennavigation">
-<!-- SVG-Logo (logo.svg in repo) -->
-<img src="logo.svg" alt="Logo PF" class="logo">
+    <nav class="side-nav" aria-label="Hauptnavigation">
+      <a href="#hero">Home</a>
+      <a href="#about">Über</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#aktuell">Aktuell</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
 
+    <div class="side-foot">© <span id="year-side"></span></div>
+  </aside>
 
-<nav class="side-nav" aria-label="Hauptnavigation">
-<a href="#hero">Home</a>
-<a href="#about">Über</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#aktuell">Aktuell</a>
-<a href="#contact">Kontakt</a>
-</nav>
+  <!-- Main Content -->
+  <main class="content">
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h1>Unterwegs – hautnah dabei</h1>
+        <p class="lead">Seit Ende der 1990er Jahre arbeite ich mit Begeisterung als Hörfunkjournalistin. Mein besonderes Augenmerk gilt der menschlichen Stimme – als Instrument, Forschungsgegenstand und Ausdrucksform.</p>
+        <p class="pill">Aktuell: Forschung zu Stimme & Öffentlichkeit</p>
+      </div>
 
-<div class="side-foot">© <span id="year-side"></span></div>
-</aside>
+      <figure class="hero-figure">
+        <img src="https://www.transcript-verlag.de/out/pictures/generated/product/1/9783837647148_fruth_cover-550x550.jpg" 
+             alt="Portrait Pia Fruth" class="hero-img">
+        <figcaption class="muted">Portrait: Pia Fruth</figcaption>
+      </figure>
+    </section>
 
+    <!-- Über mich -->
+    <section id="about" class="section">
+      <h2>Über mich</h2>
+      <div class="card">
+        <p>Ich schreibe für Tageszeitungen und Magazine und bin seit 2008 Dozentin im Medienbereich. Meine Spezialgebiete sind journalistisches Schreiben, Medienbildung und die Wirkung der menschlichen Stimme.</p>
+        <p>Studiert habe ich Rhetorik, Spanisch und Französisch in Tübingen. Nach einem Volontariat bei Neckar-Alb-Radio arbeite ich seit 2003 beim SWR. Für mein Feature <em>„Auf nach Indien“</em> erhielt ich 2007 den Medienpreis Mittelstand. 2018 promovierte ich mit der Dissertation <em>Record. Play. Stop. – Die Ära der Kompaktkassette</em>.</p>
+      </div>
+    </section>
 
-<!-- Main Content -->
-<main class="content" role="main">
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <article class="work">
+          <img src="https://www.transcript-verlag.de/out/pictures/generated/product/1/9783837647148_fruth_cover-550x550.jpg" 
+               alt="Record. Play. Stop. - Cover">
+          <h3>Record. Play. Stop. (2018)</h3>
+          <p class="muted">Dissertation zur Kulturgeschichte der Kompaktkassette, transcript Verlag.</p>
+        </article>
 
+        <article class="work">
+          <img src="https://journalistenpreise.de/fileadmin/_processed_/csm_auf_nach_indien_44c7eebf3d.jpg" 
+               alt="Auf nach Indien – Feature">
+          <h3>Feature: Auf nach Indien (SWR, 2007)</h3>
+          <p class="muted">Ausgezeichnet mit dem Medienpreis Mittelstand.</p>
+        </article>
 
-<!-- Hero Section -->
-<section id="hero" class="hero">
-<div class="hero-text">
-<h1>Unterwegs — hautnah dabei</h1>
-<p class="lead">Seit Ende der 1990er Jahre arbeite ich mit Begeisterung als Hörfunkjournalistin. Mein besonderes Augenmerk gilt der menschlichen Stimme — als Instrument, als Forschungsgegenstand und als Ausdrucksform.</p>
-<p class="pill">Aktuell: Forschung zu Stimme & Öffentlichkeit</p>
-</div>
+        <article class="work">
+          <img src="https://www.pia-fruth.de/wp-content/uploads/2022/02/kassettenbild.jpg" 
+               alt="Krisen-Radio aus dem Baumhaus">
+          <h3>Krisen-Radio aus dem Baumhaus (RuG 47, 2021)</h3>
+          <p class="muted">Akustischer Protest gegen den Bau der Startbahn West.</p>
+        </article>
+      </div>
+    </section>
 
+    <!-- Aktuell -->
+    <section id="aktuell" class="section">
+      <h2>Aktuell</h2>
+      <ul class="list">
+        <li>Vorträge und Features im SWR2 zu Stimme und Medien.</li>
+        <li>Forschungsprojekte am Institut für Medienwissenschaft, Universität Tübingen.</li>
+        <li>Lehre und Workshops zu journalistischem Schreiben und Medienpraxis.</li>
+      </ul>
+    </section>
 
-<figure class="hero-figure">
-<img src="https://www.pia-fruth.de/wp-content/uploads/2022/02/pia-fruth-portrait.jpg" alt="Pia Fruth Portrait" class="hero-img">
-<figcaption class="muted">Portrait: Pia Fruth</figcaption>
-</figure>
-</section>
+    <!-- Kontakt -->
+    <section id="contact" class="section contact">
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:pia.fruth@swr.de">pia.fruth@swr.de</a></p>
+      <p>Telefon: +49 177 773 0177</p>
+      <p>Tübingen, Deutschland</p>
+    </section>
 
+    <footer class="main-foot">
+      <div>© <span id="year"></span> Pia Fruth</div>
+    </footer>
+  </main>
 
-<!-- Über mich -->
-<section id="about" class="section">
-<h2>Über mich</h2>
-<div class="card">
-<p>Ich schreibe für Tageszeitungen und Magazine und bin seit 2008 Dozentin im Medienbereich. Meine Spezialgebiete sind journalistisches Schreiben, Medienbildung und die Wirkung der menschlichen Stimme.</p>
-<p>Studiert habe ich Rhetorik, Spanisch und Französisch in Tübingen. Nach einem Volontariat bei Neckar-Alb-Radio arbeite ich seit 2003 beim SWR. Für mein Feature <em>„Auf nach Indien“</em> erhielt ich 2007 den Medienpreis Mittelstand. 2018 promovierte ich mit der Dissertation <em>Record. Play. Stop. – Die Ära der Kompaktkassette</em>.</p>
-</div>
-</section>
-
-
-<!-- Portfolio -->
-<section id="portfolio" class="section">
-<h2>Ausgewählte Arbeiten</h2>
-<div class="grid">
-<article class="work">
-<img src="https://www.transcript-verlag.de/out/pictures/generated/product/1/9783837647148_fruth_cover-550x550.jpg" alt="Record. Play. Stop. - Cover">
-<h3>Record. Play. Stop. (2018)</h3>
-<p class="muted">Dissertation zur Kulturgeschichte der Kompaktkassette, transcript Verlag.</p>
-</article>
-
-
-<article class="work">
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year-side').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
