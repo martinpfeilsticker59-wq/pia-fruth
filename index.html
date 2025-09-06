@@ -6,74 +6,55 @@
   <title>Pia Fruth – Journalistin & Medienforscherin</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Sidebar Navigation -->
-  <aside class="sidebar" aria-label="Seitennavigation">
-    <img src="logo.svg" alt="Logo PF" class="logo">
-
-    <nav class="side-nav" aria-label="Hauptnavigation">
-      <a href="#hero">Home</a>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.svg" alt="Logo PF" class="logo">
+    </div>
+    <nav class="nav">
       <a href="#about">Über</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#aktuell">Aktuell</a>
       <a href="#contact">Kontakt</a>
     </nav>
+  </header>
 
-    <div class="side-foot">© <span id="year-side"></span></div>
-  </aside>
+  <main class="main-content">
 
-  <!-- Main Content -->
-  <main class="content">
-
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="hero" class="hero">
-      <div class="hero-text">
-        <h1>Unterwegs – hautnah dabei</h1>
-        <p class="lead">Seit Ende der 1990er Jahre arbeite ich mit Begeisterung als Hörfunkjournalistin. Mein besonderes Augenmerk gilt der menschlichen Stimme – als Instrument, Forschungsgegenstand und Ausdrucksform.</p>
-        <p class="pill">Aktuell: Forschung zu Stimme & Öffentlichkeit</p>
-      </div>
-
-      <figure class="hero-figure">
-        <img src="https://www.transcript-verlag.de/shopMedia/autoren/135339.jpg" 
-             alt="Portrait Pia Fruth" class="hero-img">
-        <figcaption class="muted">Portrait: Pia Fruth</figcaption>
-      </figure>
+      <h1>Pia Fruth</h1>
+      <p class="lead">Hörfunkjournalistin, Dozentin und Forscherin zu Stimme, Klang und Medienkultur.</p>
+      <img src="https://www.transcript-verlag.de/out/pictures/generated/product/1/9783837647148_fruth_cover-550x550.jpg" alt="Portrait Pia Fruth" class="hero-img">
     </section>
 
     <!-- Über mich -->
     <section id="about" class="section">
       <h2>Über mich</h2>
-      <div class="card">
-        <p>Ich schreibe für Tageszeitungen und Magazine und bin seit 2008 Dozentin im Medienbereich. Meine Spezialgebiete sind journalistisches Schreiben, Medienbildung und die Wirkung der menschlichen Stimme.</p>
-        <p>Studiert habe ich Rhetorik, Spanisch und Französisch in Tübingen. Nach einem Volontariat bei Neckar-Alb-Radio arbeite ich seit 2003 beim SWR. Für mein Feature <em>„Auf nach Indien“</em> erhielt ich 2007 den Medienpreis Mittelstand. 2018 promovierte ich mit der Dissertation <em>Record. Play. Stop. – Die Ära der Kompaktkassette</em>.</p>
-      </div>
+      <p>Ich schreibe für Tageszeitungen und Magazine und bin seit 2008 Dozentin im Medienbereich. Meine Spezialgebiete sind journalistisches Schreiben, Medienbildung und die Wirkung der menschlichen Stimme.</p>
+      <p>Studiert habe ich Rhetorik, Spanisch und Französisch in Tübingen. Nach einem Volontariat bei Neckar-Alb-Radio arbeite ich seit 2003 beim SWR. Für mein Feature <em>„Auf nach Indien“</em> erhielt ich 2007 den Medienpreis Mittelstand. 2018 promovierte ich mit der Dissertation <em>Record. Play. Stop. – Die Ära der Kompaktkassette</em>.</p>
     </section>
 
     <!-- Portfolio -->
     <section id="portfolio" class="section">
       <h2>Portfolio</h2>
       <div class="grid">
-        <article class="work">
-          <img src="https://www.transcript-verlag.de/out/pictures/generated/product/1/9783837647148_fruth_cover-550x550.jpg" 
-               alt="Record. Play. Stop. - Cover">
+        <article>
+          <img src="https://www.transcript-verlag.de/out/pictures/generated/product/1/9783837647148_fruth_cover-550x550.jpg" alt="Record. Play. Stop.">
           <h3>Record. Play. Stop. (2018)</h3>
           <p class="muted">Dissertation zur Kulturgeschichte der Kompaktkassette, transcript Verlag.</p>
         </article>
-
-        <article class="work">
-          <img src="https://journalistenpreise.de/fileadmin/_processed_/csm_auf_nach_indien_44c7eebf3d.jpg" 
-               alt="Auf nach Indien – Feature">
+        <article>
+          <img src="https://journalistenpreise.de/fileadmin/_processed_/csm_auf_nach_indien_44c7eebf3d.jpg" alt="Auf nach Indien">
           <h3>Feature: Auf nach Indien (SWR, 2007)</h3>
           <p class="muted">Ausgezeichnet mit dem Medienpreis Mittelstand.</p>
         </article>
-
-        <article class="work">
-          <img src="https://www.pia-fruth.de/wp-content/uploads/2022/02/kassettenbild.jpg" 
-               alt="Krisen-Radio aus dem Baumhaus">
+        <article>
+          <img src="https://www.pia-fruth.de/wp-content/uploads/2022/02/kassettenbild.jpg" alt="Krisen-Radio aus dem Baumhaus">
           <h3>Krisen-Radio aus dem Baumhaus (RuG 47, 2021)</h3>
           <p class="muted">Akustischer Protest gegen den Bau der Startbahn West.</p>
         </article>
@@ -83,7 +64,7 @@
     <!-- Aktuell -->
     <section id="aktuell" class="section">
       <h2>Aktuell</h2>
-      <ul class="list">
+      <ul>
         <li>Vorträge und Features im SWR2 zu Stimme und Medien.</li>
         <li>Forschungsprojekte am Institut für Medienwissenschaft, Universität Tübingen.</li>
         <li>Lehre und Workshops zu journalistischem Schreiben und Medienpraxis.</li>
@@ -91,21 +72,21 @@
     </section>
 
     <!-- Kontakt -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section">
       <h2>Kontakt</h2>
       <p>E-Mail: <a href="mailto:pia.fruth@swr.de">pia.fruth@swr.de</a></p>
       <p>Telefon: +49 177 773 0177</p>
       <p>Tübingen, Deutschland</p>
     </section>
 
-    <footer class="main-foot">
+    <footer>
       <div>© <span id="year"></span> Pia Fruth</div>
     </footer>
   </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('year-side').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
