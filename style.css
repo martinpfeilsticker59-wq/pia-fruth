@@ -3,13 +3,14 @@ body {
   margin: 0;
   font-family: 'Playfair Display', serif;
   color: #111;
-  background: #fff;
+  background: #faf8f6; /* dezentes Beige */
   line-height: 1.75;
 }
 
 a {
   color: #111;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -22,11 +23,13 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 48px 64px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eaeaea;
+  background: #faf8f6;
 }
 
-.logo { width: 70px; height: auto; }
+.logo { height: 60px; }
 
+/* Navigation */
 .nav a {
   margin-left: 36px;
   font-family: 'Montserrat', sans-serif;
@@ -40,7 +43,7 @@ a:hover {
 /* Hero Section */
 .hero { text-align: center; margin-bottom: 120px; }
 .hero h1 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 4rem; margin-bottom: 24px; }
-.hero .lead { font-size: 1.5rem; color: #555; margin-bottom: 40px; }
+.hero .lead { font-size: 1.5rem; color: #444; margin-bottom: 40px; }
 .hero-img { max-width: 350px; width: 100%; border-radius: 16px; margin: auto; }
 
 /* Sections */
@@ -62,7 +65,7 @@ ul { padding-left: 1.5rem; font-size: 1.1rem; }
 ul li { margin: 12px 0; }
 
 /* Footer */
-footer { text-align: center; padding: 48px 0; border-top: 1px solid #eee; color: #555; font-size: 0.95rem; }
+footer { text-align: center; padding: 48px 0; border-top: 1px solid #eaeaea; color: #555; font-size: 0.95rem; }
 
 /* Responsive */
 @media (max-width: 768px) {
